@@ -1,4 +1,4 @@
-FROM docker:19-dind
+FROM docker:latest
 
 RUN apk update && apk upgrade && apk add git openssh bash curl && \
   apk add --update nodejs npm && \
