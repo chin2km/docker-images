@@ -2,10 +2,9 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.154.0/containers/alpine
 {
 	"name": "Docker-in-Docker",
-	// "build": {
-	// 	"dockerfile": "Dockerfile",
-	// },
-	"dockerComposeFile": ["docker-compose.yml"],
+	"dockerComposeFile": [
+		"./docker-compose.yml"
+	],
 	"workspaceFolder": "/app",
 	"service": "my-dind",
 	// Set *default* container specific settings.json values on container create. 

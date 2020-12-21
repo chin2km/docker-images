@@ -4,8 +4,8 @@ services:
   my-dind:
     build:
       context: ../
-      dockerfile: ./chin2km/dind-node-builder/Dockerfile
+      dockerfile: ./chin2km/dind-node-12.20.1-builder/Dockerfile
     volumes:
-      - ../:/test
+      - ../:/app # mounts the files at ../ path to a folder named app
     # Overrides default command so things don't shut down after the process ends.
     command: /bin/sh -c "while sleep 1000; do :; done"
